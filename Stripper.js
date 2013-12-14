@@ -25,7 +25,7 @@
     } else {
         scope[name] = definition();
     }
-}).define(this, 'LinkStripper', function () {
+})(this, 'LinkStripper', function () {
 
     // Escape string for use in regex
     // To avoid exceptions from RegExp() and account for '.'=>'\.' in hosts
