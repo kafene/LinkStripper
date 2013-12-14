@@ -18,7 +18,7 @@
             unsafeWindow[name] = definition();
         } else if (window.opera) {
             window.opera.defineMagicVariable(name, function () {
-            return definition();
+                return definition();
             }, null);
         }
         scope[name] = definition();
