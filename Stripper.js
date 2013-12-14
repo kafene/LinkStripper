@@ -179,8 +179,8 @@
     LinkStripper.selfTest = function () {
         var run = function runTest(description, original, expected, got) {
             ((got = new LinkStripper().stripUrl(original)) == expected)?
-                console.info("['+ description +']: passed"):
-                console.warn("['+ description +']: failed\n" +
+                console.info("["+ description +"]: passed"):
+                console.warn("["+ description +"]: failed\n" +
                             "Original: " + original + "\n" +
                             "Expected: " + expected + "\n" +
                             "Got: " + got);
