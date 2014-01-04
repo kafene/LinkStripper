@@ -11,7 +11,7 @@
         module.exports = definition();
     } else if ('function' == typeof('define') && define.amd) {
         define(definition);
-    } else if (scope instanceof Window || scope instanceof window.Window) {
+    } else if (scope instanceof window.Window || scope instanceof Window) {
         if ('object' == typeof(window.wrappedJSObject)) {
             window.wrappedJSObject[name] = definition();
         } else if ('object' == typeof(unsafeWindow)) {
